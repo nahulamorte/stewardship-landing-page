@@ -11,7 +11,10 @@
     --color-primary: #8069BF;    
     --color-secondary: #0F172A;  
     --color-tertiary: #C9A74D;   
+    --color-section-standard: #0F172A;
+    --color-card-standard: #283042;
     --text-muted: #79767D;
+    
 
     --color-accent: #10B981;
     --color-accent-hover: #059669;
@@ -138,7 +141,7 @@ a {
     font-weight: 500;
 }
 
-a > svg {
+a > svg, .card-estandar > svg {
     vertical-align: middle;
 }
 
@@ -147,4 +150,53 @@ a > svg {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.estandares {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-section-standard);
+    width: 100%;
+    padding: var(--spacing-xl);
+    height: 100%;
+}
+
+.cards-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    gap: var(--spacing-md);
+}
+.card-estandar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+    background-color: var(--color-card-standard);
+    gap: var(--spacing-md);
+    margin: var(--spacing-md);
+    padding: var(--spacing-md);
+}
+
+.card-estandar h3{
+    font-family: var(--font-body);
+    font-size: 1rem;
+    color: var(--text-muted);
+    margin-left: var(--spacing-sm);
+}
+
+.estandar-title {
+    font-family: var(--font-button);
+    font-size: 1.5rem;
+    color: var(--bg-surface);
+    margin-bottom: var(--spacing-md);
+}
+
+.subtitle-container{
+    display : block;
+    justify-content: center;
+    align-items: center;
 }
