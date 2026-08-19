@@ -60,9 +60,6 @@ h1,
     margin-bottom: var(--spacing-md);
 }
 
-footer > .logo-text{
-    color: var(--color-secondary);
-}
 
 header{
     background-color: var(--bg-surface);
@@ -442,3 +439,93 @@ small{
     max-width: 55ch;
     font-size: 1.1rem;
 }
+
+
+/*Adaptación a mobile*/
+@media (max-width: 768px) {
+    body {
+        width: 100%;
+        justify-content: center;
+    }
+    .presentation-img {
+        display: none; 
+    }
+
+    header {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .btn-agendar-outside #arrow{
+        display: none;
+    }
+
+    .title-presentation {
+        line-height: 0.85; 
+    }
+
+    .estandar-title{
+        text-align: center;
+    }
+
+    .estandar-title{
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .cards-container{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        justify-content: center;
+        align-items: center;    
+        gap: var(--spacing-sm);
+    }
+
+    .title-info-us{
+        text-align: center;
+        font-size: 2rem;
+        max-width: 25ch;
+    }
+
+    .card-info-container{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .contacto{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card-diagnostico,
+    .card-form{
+        max-width: 400px; 
+        max-height: 480px;
+        padding: var(--spacing-lg);
+    }   
+    
+    .item-form label,
+    .item-form input,
+    .form-button button{
+        width: 100%;
+    }
+
+    .form-button button{
+        font-size: 0.9rem;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .copyrigh{
+        margin: 0;
+        padding: 0;
+        gap: 0px;
+        
+    }
+
+}
+
