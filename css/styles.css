@@ -5,9 +5,13 @@
 }
 
 :root{
-    --bg-primary: #FAFAFA;       
+    --bg-primary: #F9F2FA;       
+    --bg-secondary: #FAFAFA;
     --bg-surface: #FFFFFF;       
     --bg-icons: #F2ECF4;
+
+    
+    
 
     --color-primary: #8069BF;    
     --color-secondary: #0F172A;  
@@ -265,3 +269,84 @@ a > svg, .card-estandar > svg {
     
     margin-bottom: var(--spacing-sm);
 }
+
+
+
+.contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--bg-primary);
+    padding: var(--spacing-xxl);
+}
+
+.card-diagnostico {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: var(--color-secondary);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-card);
+    margin: 10px;
+}
+
+.card-contact-title {
+    font-family: var(--font-headings);
+    font-size: 2rem;
+    font-weight: 800;
+    max-width: 25ch;
+    gap: var(--spacing-md);
+}
+
+
+.card-contact-text{
+    max-width: 40ch;
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+    color: var(--border-separation);
+    padding: var(--spacing-lg);
+    padding-left: 0;
+}
+
+.card-contact-title,
+.card-item-text {
+    color: var(--bg-surface);
+}
+
+
+
+.card-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    padding: 0;
+}
+
+.card-item-text{
+    font-family: var(--font-body);
+    font-size: 1.1rem;
+}
+
+.icon-container {    
+    width: 32px;
+    height: 32px;
+}
+
+.card-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+ footer {
+    background-color: var(--color-section-standard);
+    margin-top: 10000000px;
+}
+/*
+footer > p {
+    font-family: var(--font-body);
+    color: var(--bg-surface);
+} */

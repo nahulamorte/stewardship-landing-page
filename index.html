@@ -138,25 +138,82 @@
 
         <section class="contacto">
             <div class="card-diagnostico">
+                <h3 class="card-contact-title">
+                    Obtén un diagnostico gratuito
+                </h3> 
+                <p class="card-contact-text">
+                    descubre cómo optimizar tu estructura actual y las oportunidades de mejora que el mercado ofrece para tu perfil.
+                </p>
+                <div class="card-item">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width={24px} height={24} viewBox="0 0 24 24" fill="none" stroke="#02A979" strokeWidth={1.2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-circle-check">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M9 12l2 2l4 -4" />
+                        </svg>
+                    </div>
+                    <p class="card-item-text">
+                        Analisis de cartera actual
+                    </p>
+                </div>
+                <div class="card-item">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width={24px} height={24} viewBox="0 0 24 24" fill="none" stroke="#02A979" strokeWidth={1.2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-circle-check">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M9 12l2 2l4 -4" />
+                        </svg>
+                    </div>
+                    <p class="card-item-text">
+                        Proyección de retiro
+                    </p>
+                </div>
+                <div class="card-item">
+                    <div class="icon-container">
+                        <svg xmlns="http://www.w3.org/2000/svg" width={24px} height={24} viewBox="0 0 24 24" fill="none" stroke="#02A979" strokeWidth={1.2} strokeLinecap="round" strokeLinejoin="round" className="icon icon-tabler icons-tabler-outline icon-tabler-circle-check">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 1 0 -18 0" />
+                            <path d="M9 12l2 2l4 -4" />
+                        </svg>
+                    </div>
+                    <p class="card-item-text">
+                        Optimización fiscal
+                    </p>
+                </div>
 
             </div>
             <div class="card-form">
                 <form action="" method"get" class="contact-form">
-                    <label for="name" type="text" required="true" >
-                        Nombre Completo:
-                        <input type="text" placeholder="Juan Pérez"> 
-                    </label>
-                    <label for="name" required="true" >
-                        Correo Electrónico:
-                        <input type="email" placeholder="juanperez@gmail.com">
-                    </label>
-                    <label for="name" type="text" >
-                        Telefóno (Opcional):
-                        <input type="text" placeholder="123-456-7890">
-                    </label>
+                    <ul class="form-list">
+                        <li>
+                            <label for="name" type="text" required="true" >
+                                Nombre Completo:
+                                <input type="text" id="name" placeholder="Juan Pérez"> 
+                            </label>
+                        </li>
+                        <li>
+                            <label for="email" required="true" >
+                                Correo Electrónico:
+                            <input type="email" id="email" placeholder="juanperez@gmail.com">
+                        </label>
+                        </li>
+                        <li>
+                            <label for="phone-number" type="text" >
+                                Telefóno (Opcional):
+                                <input type="text" id="phone-number" placeholder="123-456-7890">
+                            </label>
+                        </li>
+                        <li class="form-button">
+                            <button type="submit">Envíe su mensaje</button>
+                        </li>
+                    </ul>
+
                 </form>
             </div>
         </section>
+
+
+
     </main>
     <footer>
         <h2 class="logo-text">
