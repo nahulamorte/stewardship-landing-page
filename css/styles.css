@@ -51,7 +51,8 @@
 }
 
 h1, 
-.logo-text
+.logo-text,
+.logo-footer
  {
     font-family: var(--font-headings);
     font-size: 2rem;
@@ -77,7 +78,6 @@ header{
     padding: var(--spacing-sm);
     background-color: var(--bg-primary);
     border-bottom: 1px solid var(--border-separation);
-
     font-family: var(--font-body);
     border-radius: var(--radius-button);
     transition: background-color 0.3s ease;
@@ -101,7 +101,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
     padding-top: var(--spacing-xl);
     margin-right: var(--spacing-xl);
     color: var(--text-main);
@@ -227,13 +226,11 @@ a > svg, .card-estandar > svg {
     margin: 0;
 }
 
-
-
 .card-info-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     margin: var(--spacing-md);
-    gap: var(--spacing-lg); /* Separación entre las tarjetas */
+    gap: var(--spacing-lg); 
     width: 100%;
     max-width: 1200px;
 }
@@ -246,7 +243,6 @@ a > svg, .card-estandar > svg {
     padding: var(--spacing-md);
     background-color: var(--bg-surface);
     border-radius: var(--radius-card);
-
 }
 
 .card-title {
@@ -260,17 +256,12 @@ a > svg, .card-estandar > svg {
     display: flex;
     justify-content: center; 
     align-items: center;    
-    
     width: 48px;
     height: 48px;
-    
-    background-color: var(--bg-primary); /* O un gris clarito como #F1F5F9 */
-    border-radius: var(--radius-button); /* Curvatura sutil */
-    
+    background-color: var(--bg-primary); 
+    border-radius: var(--radius-button); 
     margin-bottom: var(--spacing-sm);
 }
-
-
 
 .contacto {
     display: flex;
@@ -289,9 +280,7 @@ a > svg, .card-estandar > svg {
     max-width: 400px; 
     max-height: 380px;
     padding: var(--spacing-lg);
-
 }
-
 
 .card-diagnostico {
     display: flex;
@@ -310,7 +299,6 @@ a > svg, .card-estandar > svg {
     gap: var(--spacing-md);
 }
 
-
 .card-contact-text{
     max-width: 40ch;
     font-family: var(--font-body);
@@ -324,8 +312,6 @@ a > svg, .card-estandar > svg {
 .card-item-text {
     color: var(--bg-surface);
 }
-
-
 
 .card-item {
     display: flex;
@@ -411,37 +397,48 @@ a > svg, .card-estandar > svg {
     cursor: pointer;
 }
 
+.btn-agendar-outside a:hover,
 .form-button button:hover {
     background-color: var(--color-accent-hover); 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
- footer {
+footer {
     background-color: var(--color-section-standard);
-    margin-top: 10000000px;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+    padding: var(--spacing-xxl);
 }
-/*
-footer > p {
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    margin: var(--spacing-lg);
+}
+
+.legal-advice, 
+.logo-footer,
+ .legal-text,
+  small  {
+    color: var(--bg-secondary);
+}
+
+small{
     font-family: var(--font-body);
-    color: var(--bg-surface);
-} */
+    font-size: 1.1rem;
+}
+
+.legal {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.legal-advice,
+.legal-text {
+    font-family: var(--font-body);
+    max-width: 55ch;
+    font-size: 1.1rem;
+}
